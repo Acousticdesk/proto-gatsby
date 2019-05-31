@@ -1,10 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-import LibraryGrid from './grid.component'
+import LibraryGrid from './grid/grid.component'
 
-export default () => (
+const TechStack = ({ edges }) => (
   <>
     <h1>Tech Stack</h1>
-    <LibraryGrid />
+    <LibraryGrid edges={edges} />
   </>
 )
+
+TechStack.propTypes = {
+  edges: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
+
+export default TechStack
