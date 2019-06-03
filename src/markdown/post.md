@@ -1,5 +1,5 @@
 ---
-path: "/blog/my-first-post"
+path: "/my-first-post"
 date: "2017-11-07"
 title: "GatsbyJS"
 ---
