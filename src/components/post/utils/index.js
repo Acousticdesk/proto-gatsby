@@ -1,2 +1,2 @@
 export * from './getters'
-export * from './withEdges'
+export * from './useEdges'

@@ -17,6 +17,6 @@ const FETCH_POSTS_QUERY = graphql`query {
   }
 }`
 
-export const withEdges = () => ({
+export const useEdges = () => ({
   edges: pathOr([], ['allMarkdownRemark', 'edges'], useStaticQuery(FETCH_POSTS_QUERY)),
 })

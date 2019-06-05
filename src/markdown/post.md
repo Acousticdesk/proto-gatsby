@@ -1,6 +1,6 @@
 ---
-path: "/my-first-post"
-date: "2017-11-07"
+path: "/gatsby"
+date: "2019-05-06"
 title: "GatsbyJS"
 ---
 
