@@ -1,5 +1,5 @@
-import { path } from 'ramda'
+import { highlightBlock } from '../../highlight'
 
-import { highlightAuto } from '../../highlight'
-
-export const highlightCode = value => path(['value'], highlightAuto(value))
+export const highlightCode = () => [...document.querySelectorAll('pre code').forEach(code => (
+  highlightBlock(code)
+))]

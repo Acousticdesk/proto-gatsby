@@ -1,27 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
 
 import Layout from '../components/post/layout'
 import { highlightCode } from '../components/code/utils'
 
-const codeSample = `
-  export { useStaticQuery } from 'gatsby'
-  export Layout from '../components/layout'
-  
-  export default () => (
+const Gatsby = ({ pageContext: { content } }) => {
+  useEffect(() => {
+    highlightCode()
+  }, [])
+  return (
     <Layout>
-        Hello from Gatsby!
+      <div dangerouslySetInnerHTML={{ __html: content }} />
     </Layout>
   )
-`
+}
 
-// TODO: investigate other code highlighters
-export default () => (
-  <Layout>
-    <pre>
-      <code
-        className="hljs"
-        dangerouslySetInnerHTML={{ __html: highlightCode(codeSample) }}
-      />
-    </pre>
-  </Layout>
-)
+Gatsby.propTypes = {
+  pageContext: PropTypes.shape().isRequired,
+}
+
+export default Gatsby

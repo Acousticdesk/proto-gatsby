@@ -1,4 +1,2 @@
-const getPostFrontmatter = post => post.frontmatter
-
-export const getPostTitle = post => getPostFrontmatter(post).title
-export const getPostPath = post => getPostFrontmatter(post).path
+export const getPostTitle = post => post.title
+export const getPostPath = post => post.slug
