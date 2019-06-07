@@ -4,7 +4,7 @@ import LibraryGrid from './grid/grid.component'
 
 const TechStack = () => (
   <>
-    <h1>Tech Stack</h1>
+    <h2>Построим что-то восхитительное при помощи этих инструментов!</h2>
     <LibraryGrid />
   </>
 )

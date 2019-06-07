@@ -35,7 +35,6 @@ exports.createPages = async ({ graphql, actions }) => {
       path: '/svelte',
       component: require.resolve('./src/pages/gatsby.js'),
       context: {
-        id: edge.node.id,
         title: edge.node.title,
         content: edge.node.content,
       },
