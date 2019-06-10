@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 import Layout from '../components/layout'
 import { highlightCode } from '../components/code/utils'
-import './gatsby.css'
 
 const Gatsby = ({ pageContext: { content, title } }) => {
   useEffect(() => {

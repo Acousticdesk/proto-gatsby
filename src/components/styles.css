@@ -1,3 +1,25 @@
-header, footer {
-    height: 100px;
+.post {
+    width: 960px;
+    line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 24px;
+}
+
+h2, h5 {
+    font-size: 2rem;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+/* TODO: from variable */
+.header__menu {
+    line-height: 64px;
+    margin-left: 64px;
 }
