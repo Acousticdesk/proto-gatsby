@@ -1,2 +1,3 @@
 export * from './getters'
-export * from './useEdges'
+export * from './usePosts'
+export * from './useCategories'

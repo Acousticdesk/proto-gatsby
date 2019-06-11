@@ -16,6 +16,4 @@ const FETCH_POSTS_QUERY = graphql`query {
   }
 }`
 
-export const useEdges = () => ({
-  edges: pathOr([], ['allWordpressPost', 'edges'], useStaticQuery(FETCH_POSTS_QUERY)),
-})
+export const usePosts = () => pathOr([], ['allWordpressPost', 'edges'], useStaticQuery(FETCH_POSTS_QUERY))

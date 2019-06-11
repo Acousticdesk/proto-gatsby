@@ -1,23 +1,36 @@
 import React from 'react'
-import { pipe } from 'ramda'
+import { path } from 'ramda'
 
 import LibraryGridItem from './LibraryGridItem.component'
 
-import { getEdgeCategory, useEdges } from '../../post/utils'
+import { getEdgeCategory, usePosts, useCategories } from '../../post/utils'
 
-const LibraryGrid = pipe(
-  useEdges,
-  ({ edges }) => (
+const LibraryGrid = () => {
+  const categories = useCategories()
+  const posts = usePosts()
+
+  return (
     <ul className="library-grid">
-      {edges.map(edge => (
-        <LibraryGridItem
-          key={edge.node.id}
-          category={getEdgeCategory(edge)}
-          post={edge.node}
-        />
-      ))}
+      {categories
+        .filter(category => category.name !== 'other')
+        .map(category => (
+          <li>
+            <h5>{category.name}</h5>
+            <ul>
+              {posts
+                .filter(post => path(['slug'], getEdgeCategory(post)) === category.slug)
+                .map(post => (
+                  <LibraryGridItem
+                    key={post.node.id}
+                    category={getEdgeCategory(post)}
+                    post={post.node}
+                  />
+                ))}
+            </ul>
+          </li>
+        ))}
     </ul>
-  ),
-)
+  )
+}
 
 export default LibraryGrid
