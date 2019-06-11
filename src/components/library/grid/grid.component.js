@@ -1,5 +1,6 @@
 import React from 'react'
 import { path } from 'ramda'
+import { Link } from 'gatsby'
 
 import LibraryGridItem from './LibraryGridItem.component'
 
@@ -25,7 +26,15 @@ const LibraryGrid = () => {
                     category={getEdgeCategory(post)}
                     post={post.node}
                   />
-                ))}
+                ))
+                .slice(0, 2)}
+              <li>
+                <Link to={`/category/${category.slug}`}>
+                  Больше историй с
+                  {' '}
+                  {category.name}
+                </Link>
+              </li>
             </ul>
           </li>
         ))}
