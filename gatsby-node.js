@@ -14,10 +14,12 @@ exports.createPages = async ({ graphql, actions }) => {
       allWordpressPost {
         edges {
           node {
-            id
             title
             content
             slug
+            categories {
+              slug
+            }
           }
         }
       }
@@ -32,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   allWordpressPost.edges.forEach((edge) => {
     createPage({
-      path: '/svelte',
+      path: `/${edge.node.categories[0].slug}/${edge.node.slug}`,
       component: require.resolve('./src/pages/gatsby.js'),
       context: {
         title: edge.node.title,

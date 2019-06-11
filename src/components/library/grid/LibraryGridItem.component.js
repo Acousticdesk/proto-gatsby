@@ -5,9 +5,9 @@ import { Link } from 'gatsby'
 // TODO: how to use absolute imports
 import { getPostTitle, getPostPath } from '../../post/utils'
 
-const LibraryGridItem = ({ post }) => (
+const LibraryGridItem = ({ post, category }) => (
   <li className="library-grid__item">
-    <Link to={getPostPath(post)}>{getPostTitle(post)}</Link>
+    <Link to={getPostPath(category, post)}>{getPostTitle(post)}</Link>
   </li>
 )
 
@@ -17,6 +17,7 @@ LibraryGridItem.propTypes = {
       title: PropTypes.string,
     })
     .isRequired,
+  category: PropTypes.string.isRequired,
 }
 
 export default LibraryGridItem

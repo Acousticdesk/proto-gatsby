@@ -5,10 +5,12 @@ const FETCH_POSTS_QUERY = graphql`query {
    allWordpressPost {
     edges {
       node {
-        id
         content
         slug
         title
+        categories {
+          slug
+        }
       }
     }
   }
