@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 
 const Categories = ({ pageContext: { categories = [] } }) => (
   <Layout>
-    {categories && categories.filter(c => c.node.name !== 'other').map(c => (
+    {categories.filter(c => c.node.name !== 'other').map(c => (
       <Link
         key={c.node.slug}
         to={`/category/${c.node.slug}`}

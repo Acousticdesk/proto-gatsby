@@ -5,10 +5,12 @@ import { Link } from 'gatsby'
 
 import { children as childrenDef } from '../prop-types-defs'
 import Logo from './layout/logo'
+import Meta from './meta'
 import './styles.css'
 
 const GatsbyLayout = ({ children }) => (
   <>
+    <Meta />
     <Layout.Header className="header">
       <Logo />
       <Menu
