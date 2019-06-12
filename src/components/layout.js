@@ -19,10 +19,13 @@ const GatsbyLayout = ({ children }) => (
         className="header__menu"
       >
         <Menu.Item>
+          <Link to="/categories">Инструменты</Link>
+        </Menu.Item>
+        <Menu.Item>
           <Link to="/about">О ресурсе</Link>
         </Menu.Item>
         <Menu.Item>
-          <Link to="/categories">Инструменты</Link>
+          <Link to="/FAQ">FAQ</Link>
         </Menu.Item>
       </Menu>
     </Layout.Header>

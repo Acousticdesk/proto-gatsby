@@ -1,17 +1,15 @@
 import React from 'react'
-import Layout from '../../components/layout'
-
-import './styles.css'
+import Layout from '../components/layout'
 
 export default () => (
   <Layout>
-    <h2 className="about__header">Привет! Добро пожаловать на letconst!</h2>
+    <h2 className="content__header">Привет! Добро пожаловать на letconst!</h2>
     <p>
       Я очень рад видеть тебя на нашем с тобой ресурсе!
     </p>
 
-    <div className="about__section">
-      <h5 className="about__header">Несколько слов обо мне</h5>
+    <div className="content__section">
+      <h5 className="content__header">Несколько слов обо мне</h5>
 
       <p>
         Меня зовут Андрей и помимо проведения времени за написаниями статей
@@ -26,8 +24,8 @@ export default () => (
       </p>
     </div>
 
-    <div className="about__section">
-      <h2 className="about__header">Что я получу от letconst?</h2>
+    <div className="content__section">
+      <h2 className="content__header">Что я получу от letconst?</h2>
 
       <p>
         Ресурс позволит тебе стать еще лучшим разработчиком, весело провести
@@ -41,7 +39,7 @@ export default () => (
       </p>
     </div>
 
-    <div className="about__section">
+    <div className="content__section">
       <p>
         Have fun!
       </p>
