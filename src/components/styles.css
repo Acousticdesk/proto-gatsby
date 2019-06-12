@@ -1,8 +1,25 @@
+html, body {
+    box-sizing: border-box;
+}
+
 .post {
     width: 960px;
     line-height: 1.5;
     font-family: Helvetica, Arial, sans-serif;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+    .post {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post {
+        width: 100%;
+        padding: 0 24px;
+    }
 }
 
 p {
@@ -11,6 +28,21 @@ p {
 
 h2, h5 {
     font-size: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+    p {
+        font-size: 22px;
+    }
+    h2, h5 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    p {
+        font-size: 20px;
+    }
 }
 
 .header {
