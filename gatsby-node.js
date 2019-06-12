@@ -20,6 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
             categories {
               slug
             }
+            excerpt
           }
         }
       }
@@ -35,10 +36,11 @@ exports.createPages = async ({ graphql, actions }) => {
   allWordpressPost.edges.forEach((edge) => {
     createPage({
       path: `/${edge.node.categories[0].slug}/${edge.node.slug}`,
-      component: require.resolve('./src/pages/gatsby.js'),
+      component: require.resolve('./src/pages/post.js'),
       context: {
         title: edge.node.title,
         content: edge.node.content,
+        excerpt: edge.node.excerpt,
       },
     })
   })
