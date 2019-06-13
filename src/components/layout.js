@@ -25,7 +25,7 @@ const GatsbyLayout = ({ children }) => (
           <Link to="/FAQ">FAQ</Link>
         </Menu.Item>
         <Menu.Item>
-          <Link to="/categories">Инструменты</Link>
+          <Link to="/categories">Все инструменты</Link>
         </Menu.Item>
       </Menu>
     </Layout.Header>
