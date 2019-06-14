@@ -1,5 +1,5 @@
 import React from 'react'
-import 'antd/dist/antd.min.css'
+// import 'antd/dist/antd.min.css'
 import { Layout, Menu } from 'antd'
 import { Link } from 'gatsby'
 

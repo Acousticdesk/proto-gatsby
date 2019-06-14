@@ -1,3 +1,4 @@
+const sanitizeHtml = require('sanitize-html')
 /**
  * Implement Gatsby's Node APIs in this file.
  *
@@ -40,7 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         title: edge.node.title,
         content: edge.node.content,
-        excerpt: edge.node.excerpt,
+        excerpt: sanitizeHtml(edge.node.excerpt),
       },
     })
   })
