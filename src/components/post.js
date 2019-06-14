@@ -28,9 +28,7 @@ const Post = ({ pageContext: { content, title, excerpt } }) => {
         <meta name="twitter:creator" content="@letconstportal" />
       </Helmet>
       <h1>{title}</h1>
-      <div>
-        {content}
-      </div>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
     </Layout>
   )
 }
