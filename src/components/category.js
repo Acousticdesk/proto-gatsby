@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
+import Layout from './layout'
 
 const Category = ({ pageContext: { name, slug, posts = [] } }) => (
   <Layout>

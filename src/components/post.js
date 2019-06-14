@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Layout from '../components/layout'
-import { highlightCode } from '../components/code/utils'
+import Layout from './layout'
+import { highlightCode } from './code/utils'
 
 const Post = ({ pageContext: { content, title, excerpt } }) => {
   useEffect(() => {

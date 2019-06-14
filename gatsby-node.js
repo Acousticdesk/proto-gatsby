@@ -36,7 +36,7 @@ exports.createPages = async ({ graphql, actions }) => {
   allWordpressPost.edges.forEach((edge) => {
     createPage({
       path: `/${edge.node.categories[0].slug}/${edge.node.slug}`,
-      component: require.resolve('./src/pages/post.js'),
+      component: require.resolve('./src/components/post.js'),
       context: {
         title: edge.node.title,
         content: edge.node.content,
@@ -66,7 +66,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   createPage({
     path: '/categories',
-    component: require.resolve('./src/pages/categories.js'),
+    component: require.resolve('./src/components/categories.js'),
     context: {
       categories: allWordpressCategory.edges,
     },
@@ -75,7 +75,7 @@ exports.createPages = async ({ graphql, actions }) => {
   allWordpressCategory.edges.forEach((c) => {
     createPage({
       path: `/category/${c.node.slug}`,
-      component: require.resolve('./src/pages/category.js'),
+      component: require.resolve('./src/components/category.js'),
       context: {
         name: c.node.name,
         slug: c.node.slug,
