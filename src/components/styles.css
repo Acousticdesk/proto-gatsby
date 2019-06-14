@@ -73,6 +73,6 @@ img {
     max-width: 100%;
 }
 
-p {
+p, pre {
     margin-bottom: 50px;
 }
