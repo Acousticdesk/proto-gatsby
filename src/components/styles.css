@@ -4,7 +4,7 @@ html, body {
 }
 
 .post {
-    width: 960px;
+    width: 700px;
     font-family: Helvetica, Arial, sans-serif;
     margin: 0 auto;
 }
@@ -23,28 +23,28 @@ html, body {
 }
 
 p {
-    font-size: 24px;
+    font-size: 21px;
     line-height: 40px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 45px;
-    line-height: 63px;
-    padding: 20px 0;
+    font-size: 38px;
+    line-height: 52px;
+    padding: 17px 0;
 }
 
 @media screen and (max-width: 960px) {
     p {
-        font-size: 22px;
+        font-size: 18px;
     }
     h2, h3, h3, h5 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 650px) {
     p {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 30px;
 }
 
-img {
+.wp-block-image img {
     display: block;
     margin: 20px auto;
     max-width: 100%;
@@ -75,4 +75,8 @@ img {
 
 p, pre {
     margin-bottom: 50px;
+}
+
+ul, li {
+    list-style-type: none;
 }

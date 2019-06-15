@@ -8,7 +8,15 @@ const Category = ({ pageContext: { name, slug, posts = [] } }) => (
   <Layout>
     <h5>{name}</h5>
     <ul>
-      {posts.map(p => <Link key={p.node.slug} to={`/${slug}/${p.node.slug}`}>{p.node.title}</Link>)}
+      {posts.map(p => (
+        <li key={p.node.slug}>
+          <Link
+            to={`/${slug}/${p.node.slug}`}
+          >
+            {p.node.title}
+          </Link>
+        </li>
+      ))}
     </ul>
   </Layout>
 )

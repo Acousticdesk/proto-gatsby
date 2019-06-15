@@ -1,0 +1,11 @@
+.library-grid__posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    grid-column-gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ant-card-meta-title {
+    white-space: initial;
+}
