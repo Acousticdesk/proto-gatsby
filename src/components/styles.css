@@ -37,8 +37,9 @@ h1, h2, h3, h4, h5 {
     p {
         font-size: 18px;
     }
-    h2, h3, h3, h5 {
+    h1, h2, h3, h3, h5 {
         font-size: 1.5rem;
+        line-height: 2rem;
     }
 }
 
@@ -53,10 +54,65 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 100px;
 }
 
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0 16px;
+    }
+}
+
 /* TODO: from variable */
 .header__menu {
     line-height: 64px;
+}
+
+.header__menu-container {
     margin-left: 64px;
+}
+
+.header__menu-icon {
+    color: #fff;
+}
+
+.header__menu-button {
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+}
+
+.header__mobile-menu {
+    margin-left: auto;
+}
+
+.header__social-menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon__img {
+    width: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .social-icon__img {
+        width: 12px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .header__mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__menu-container {
+        display: none;
+    }
 }
 
 .content__section {

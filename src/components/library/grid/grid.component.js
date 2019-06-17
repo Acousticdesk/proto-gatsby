@@ -41,8 +41,8 @@ const LibraryGrid = () => {
                 .map(post => (
                   <Link to={getPostPath(getEdgeCategory(post), post.node)}>
                     <Card
+                      className="library-grid__card"
                       key={post.node.id}
-                      style={{ width: 300, marginTop: 16 }}
                     >
                       <Meta
                         avatar={
