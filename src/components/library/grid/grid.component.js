@@ -35,7 +35,7 @@ const LibraryGrid = () => {
       {categories
         .filter(category => category.name !== 'other')
         .map(category => (
-          <li>
+          <div>
             <h5 className="library-grid__heading">{category.name}</h5>
             <ul className="library-grid__posts">
               {posts
@@ -62,7 +62,7 @@ const LibraryGrid = () => {
               {' '}
               {category.name}
             </Link>
-          </li>
+          </div>
         ))}
     </div>
   )
