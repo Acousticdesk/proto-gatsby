@@ -7,6 +7,6 @@ export default () => (
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="google-site-verification" content="isIs2HhCzxV5jdc0Na1-2Ke5H64kgvSA3Q-DQGJn3Gg" />
 
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
   </Helmet>
 )

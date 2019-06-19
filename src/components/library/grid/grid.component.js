@@ -8,6 +8,7 @@ import {
 } from '../../post/utils'
 
 import svelte from '../../assets/svelte.png'
+import react from '../../assets/react.png'
 import improvement from '../../assets/improvement.png'
 
 import './styles.css'
@@ -17,6 +18,7 @@ const { Meta } = Card
 const postIcons = {
   svelte,
   improvement,
+  react,
 }
 
 const getPostAvatar = pipe(
@@ -34,7 +36,7 @@ const LibraryGrid = () => {
         .filter(category => category.name !== 'other')
         .map(category => (
           <li>
-            <h5>{category.name}</h5>
+            <h5 className="library-grid__heading">{category.name}</h5>
             <ul className="library-grid__posts">
               {posts
                 .filter(post => path(['slug'], getEdgeCategory(post)) === category.slug)

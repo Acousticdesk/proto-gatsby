@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e073c3d3-e5ad-4b9e-a653-7658772b5292" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/assets/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/assets/telegram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/assets/twitter.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/logo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/logo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/logo/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/logo/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/library/grid/grid.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/library/grid/grid.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/library/grid/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/library/grid/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/meta.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/meta.js" afterDir="false" />
@@ -27,38 +22,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/styles.css">
+      <file leaf-file-name="grid.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/library/grid/grid.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/logo/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="52">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/logo/styles.css">
+        <entry file="file://$PROJECT_DIR$/src/components/library/grid/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="354">
+              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout.js">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="-1414">
+              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/categories.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -66,11 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meta.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/meta.js">
+      <file leaf-file-name="layout.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/layout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tech-stack.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/library/tech-stack.component.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -79,9 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Helmet</find>
-      <find>c</find>
-      <find>color</find>
       <find>a11</find>
       <find>index</find>
       <find>&lt;script src=&quot;/component---src-pages-post-js-aeee8b29ee89a72fe43c.js&quot;</find>
@@ -95,25 +96,29 @@
       <find>Svel</find>
       <find>&lt;!DOCTYPE html&gt; &lt;html&gt;&lt;head&gt;&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot; /&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; /&gt;&lt;style data-href=&quot;/styles.a5b1d86ef15e30efe068.css&quot;&gt;h1.logo{color:#fff;line-height:64px;margin:0;padding:0}body,html{box-sizing:border-box;color:#111}.post{width:960px;font-family:Helvetica,Arial,sans-serif;margin:0 auto}@media screen and (max-width:960px){.post{width:768px}}@media screen and (max-width:768px){.post{width:100%;padding:0 24px}}p{font-size:24px;line-height:40px}h1,h2,h3,h4,h5{font-size:45px;line-height:63px;padding:20px 0}@media screen and (max-width:960px){p{font-size:22px}h2,h3,h5{font-size:1.8rem}}@media screen and (max-width:650px){p{font-size:20px}}.header{display:flex;margin-bottom:100px}.header__menu{line-height:64px;margin-left:64px}.content__section{margin-top:75px}.content__header{margin-bottom:30px}img{display:block;margin:20px auto;max-width:100%}p,pre{margin-bottom:50px}.hljs{display:block;overflow-x:auto;padding:.5em;background:#eee;color:#000}.hljs-addition,.hljs-attribute,.hljs-emphasis,.hljs-link{color:#070}.hljs-emphasis{font-style:italic}.hljs-deletion,.hljs-string,.hljs-strong{color:#d14}.hljs-strong{font-weight:700}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-section,.hljs-title{color:#900}.hljs-class .hljs-title,.hljs-type{color:#458}.hljs-template-variable,.hljs-variable{color:#369}.hljs-bullet{color:#970}.hljs-meta{color:#34b}.hljs-code,.hljs-keyword,.hljs-literal,.hljs-number,.hljs-selector-tag{color:#099}.hljs-regexp{background-color:#fff0ff;color:#808}.hljs-symbol{color:#990073}.hljs-name,.hljs-selector-class,.hljs-selector-id,.hljs-tag{color:#070}&lt;/style&gt;&lt;meta name=&quot;generator&quot; content=&quot;Gatsby 2.7.5&quot; /&gt;&lt;title&gt;Аутентифиция Тора при помощи Svelte!- letconst&lt;/title&gt;&lt;link rel=&quot;sitemap&quot; type=&quot;application/xml&quot; href=&quot;/sitemap.xml&quot; /&gt;&lt;link as=&quot;script&quot; rel=&quot;preload&quot; href=&quot;/component---src-components-post-js-9e433a3997867eda61f8.js&quot; /&gt;&lt;link as=&quot;script&quot; rel=&quot;preload&quot; href=&quot;/app-a9fdfddf7d3e81a90e83.js&quot; /&gt;&lt;link as=&quot;script&quot; rel=&quot;preload&quot; href=&quot;/2-4ec2812618dbd4512b3b.js&quot; /&gt;&lt;link as=&quot;script&quot; rel=&quot;preload&quot; href=&quot;/1-e37b0a9110845b13184d.js&quot; /&gt;&lt;link as=&quot;script&quot; rel=&quot;preload&quot; href=&quot;/styles-0d2ab3205f4181022de8.js&quot; /&gt;&lt;link as=&quot;script&quot; rel=&quot;preload&quot; href=&quot;/webpack-runtime-b3b14471d368e662ba34.js&quot; /&gt;&lt;link as=&quot;fetch&quot; rel=&quot;preload&quot; href=&quot;/static/d/751/path---svelte-thor-auth-svelte-20-a-2c3-axNxxTPEvMG29pMQRTDo5YCQjk.json&quot; crossorigin=&quot;use-credentials&quot; /&gt;&lt;script charset=&quot;utf-8&quot; src=&quot;/component---src-components-post-js-9e433a3997867eda61f8.js&quot;&gt;&lt;/script&gt;&lt;script charset=&quot;utf-8&quot; src=&quot;/pages-manifest-3d21f26b54221e25cf43.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript id=&quot;gatsby-noscript&quot;&gt;This app works best with JavaScript enabled.&lt;/noscript&gt;&lt;div id=&quot;___gatsby&quot;&gt;&lt;/div&gt;&lt;script id=&quot;gatsby-script-loader&quot;&gt;/*&lt;![CDATA[*/window.page={&quot;componentChunkName&quot;:&quot;component---src-components-post-js&quot;,&quot;jsonName&quot;:&quot;svelte-thor-auth-svelte-20a&quot;,&quot;path&quot;:&quot;/svelte/thor-auth-svelte&quot;};window.dataPath=&quot;751/path---svelte-thor-auth-svelte-20-a-2c3-axNxxTPEvMG29pMQRTDo5YCQjk&quot;;/*]]&gt;*/&lt;/script&gt;&lt;script id=&quot;gatsby-chunk-mapping&quot;&gt;/*&lt;![CDATA[*/window.___chunkMapping={&quot;app&quot;:[&quot;/app-a9fdfddf7d3e81a90e83.js&quot;],&quot;component---src-components-post-js&quot;:[&quot;/component---src-components-post-js-9e433a3997867eda61f8.js&quot;],&quot;component---src-components-categories-js&quot;:[&quot;/component---src-components-categories-js-4e49634fbec0225645ba.js&quot;],&quot;component---src-components-category-js&quot;:[&quot;/component---src-components-category-js-703013cc081b1bf053e4.js&quot;],&quot;component---src-pages-404-js&quot;:[&quot;/component---src-pages-404-js-535552bbd505f4d5de14.js&quot;],&quot;component---src-pages-about-js&quot;:[&quot;/component---src-pages-about-js-83edd27b3f0a2f158659.js&quot;],&quot;component---src-pages-faq-js&quot;:[&quot;/component---src-pages-faq-js-f68e80274fb94a8ec244.js&quot;],&quot;component---src-pages-index-js&quot;:[&quot;/component---src-pages-index-js-2fffe919a8dffb571782.js&quot;],&quot;pages-manifest&quot;:[&quot;/pages-manifest-3d21f26b54221e25cf43.js&quot;]};/*]]&gt;*/&lt;/script&gt;&lt;script src=&quot;/webpack-runtime-b3b14471d368e662ba34.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/styles-0d2ab3205f4181022de8.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/1-e37b0a9110845b13184d.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/2-4ec2812618dbd4512b3b.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/app-a9fdfddf7d3e81a90e83.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/component---src-components-post-js-9e433a3997867eda61f8.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</find>
       <find>pages-manife</find>
-      <find>svelte</find>
       <find>&lt;script id=&quot;gatsby-script-loader&quot;&gt;</find>
       <find>id=&quot;___gatsby&quot;&gt;</find>
       <find>loading</find>
-      <find>post</find>
       <find>img</find>
       <find>fill</find>
       <find>960px</find>
       <find>widrg</find>
       <find>HeaderMenu</find>
-      <find>header</find>
       <find>element</find>
       <find>24px</find>
       <find>button</find>
+      <find>svelte</find>
+      <find>50px</find>
+      <find>hea</find>
+      <find>post</find>
+      <find>header</find>
+      <find>header-menu</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/src</dir>
       <dir>$PROJECT_DIR$/public</dir>
+      <dir>$PROJECT_DIR$/src/components</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -164,14 +169,14 @@
         <option value="$PROJECT_DIR$/src/components/post.js" />
         <option value="$PROJECT_DIR$/src/components/assets/improvement.svg" />
         <option value="$PROJECT_DIR$/src/components/category.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/logo/index.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/logo/styles.css" />
+        <option value="$PROJECT_DIR$/src/components/meta.js" />
         <option value="$PROJECT_DIR$/src/components/library/grid/grid.component.js" />
         <option value="$PROJECT_DIR$/src/components/library/grid/styles.css" />
         <option value="$PROJECT_DIR$/src/components/categories.js" />
-        <option value="$PROJECT_DIR$/src/components/meta.js" />
-        <option value="$PROJECT_DIR$/src/components/layout.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/logo/index.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/logo/styles.css" />
         <option value="$PROJECT_DIR$/src/components/styles.css" />
+        <option value="$PROJECT_DIR$/src/components/layout.js" />
       </list>
     </option>
   </component>
@@ -232,9 +237,7 @@
               <item name="proto" type="b2602c69:ProjectViewProjectNode" />
               <item name="proto" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="logo" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,36 +305,37 @@
       <workItem from="1560533389556" duration="2743000" />
       <workItem from="1560548357190" duration="6065000" />
       <workItem from="1560713625814" duration="991000" />
-      <workItem from="1560763730337" duration="2623000" />
+      <workItem from="1560763730337" duration="3030000" />
+      <workItem from="1560963355102" duration="1273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51362000" />
+    <option name="totallyTimeSpent" value="53042000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Quick Notes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32848486" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2944126" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2987106" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,13 +350,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/code/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/post/layout.js" />
     <entry file="file://$PROJECT_DIR$/src/components/layout.css" />
     <entry file="file://$PROJECT_DIR$/src/pages/gatsby.css" />
@@ -536,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/library/tech-stack.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/post/utils/usePosts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -557,42 +547,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/categories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/library/grid/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/library/grid/grid.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/assets/telegram.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/meta.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/icon/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -601,20 +557,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/components/assets/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/logo/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/meta.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="119">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -625,10 +574,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/logo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/library/tech-stack.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/categories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/library/grid/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/library/grid/grid.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="-1414">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>

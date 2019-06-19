@@ -21,13 +21,13 @@ const HeaderMenu = () => (
     mode="horizontal"
     className="header__menu"
   >
-    <Menu.Item>
+    <Menu.Item className="header__menu-item">
       <Link to="/about">О ресурсе</Link>
     </Menu.Item>
-    <Menu.Item>
+    <Menu.Item className="header__menu-item">
       <Link to="/FAQ">FAQ</Link>
     </Menu.Item>
-    <Menu.Item>
+    <Menu.Item className="header__menu-item">
       <Link to="/categories">Все инструменты</Link>
     </Menu.Item>
   </Menu>
@@ -107,7 +107,7 @@ const GatsbyLayout = ({ children }) => (
         </button>
       </Dropdown>
     </Layout.Header>
-    <div className="post">
+    <div className="app">
       {children}
     </div>
     <footer />
