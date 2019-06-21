@@ -4,6 +4,9 @@ import Helmet from 'react-helmet'
 
 import Layout from './layout'
 import { highlightCode } from './code/utils'
+import createHightlight from '../highlight'
+
+createHightlight()
 
 const Post = ({ pageContext: { content, title, excerpt } }) => {
   useEffect(() => {

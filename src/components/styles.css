@@ -19,7 +19,7 @@ html, body {
 @media screen and (max-width: 768px) {
     .app {
         width: 100%;
-        padding: 0 24px;
+        padding: 114px 24px 0;
     }
 }
 

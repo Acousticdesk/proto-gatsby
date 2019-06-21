@@ -2,9 +2,6 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import TechStack from '../components/library/tech-stack.component'
-import createHightlight from '../highlight'
-
-createHightlight()
 
 const IndexPage = () => (
   <Layout>
