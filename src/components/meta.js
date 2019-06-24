@@ -8,13 +8,15 @@ export default () => (
   <Helmet>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142558665-1" />
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date());
+      {`
+        window.dataLayer = window.dataLayer || [];
+        const gtag = () => {
+          window.dataLayer.push(arguments)
+        };
+        gtag('js', new Date());
 
-      gtag('config', 'UA-142558665-1');
+        gtag('config', 'UA-142558665-1');
+      `}
     </script>
 
     <title>letconst - Веб вдохновение</title>
