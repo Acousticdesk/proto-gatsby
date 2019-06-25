@@ -55,7 +55,7 @@ const LibraryGrid = () => {
                     </Card>
                   </Link>
                 ))
-                .slice(0, 2)}
+                .slice(0, 5)}
             </ul>
             <Link to={`/category/${category.slug}`}>
               Больше историй с
