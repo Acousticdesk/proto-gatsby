@@ -33,7 +33,6 @@ const LibraryGrid = () => {
   return (
     <div className="library-grid">
       {categories
-        .filter(category => category.name !== 'other')
         .map(category => (
           <div>
             <h5 className="library-grid__heading">{category.name}</h5>
