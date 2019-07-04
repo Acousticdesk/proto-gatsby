@@ -4,7 +4,12 @@ import LibraryGrid from './grid/grid.component'
 
 const TechStack = () => (
   <>
-    <h2>Построй что-то восхитительное при помощи этих инструментов!</h2>
+    <h2>
+      <span role="img" aria-label="superhero">
+        🦸
+      </span>
+      Become a developer superhero making great stuff with this instruments!
+    </h2>
     <LibraryGrid />
   </>
 )

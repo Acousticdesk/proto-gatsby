@@ -22,13 +22,13 @@ const HeaderMenu = () => (
     className="header__menu"
   >
     <Menu.Item className="header__menu-item">
-      <Link to="/about">О ресурсе</Link>
+      <Link to="/about">About</Link>
     </Menu.Item>
     <Menu.Item className="header__menu-item">
       <Link to="/FAQ">FAQ</Link>
     </Menu.Item>
     <Menu.Item className="header__menu-item">
-      <Link to="/categories">Все инструменты</Link>
+      <Link to="/categories">Instruments</Link>
     </Menu.Item>
   </Menu>
 )

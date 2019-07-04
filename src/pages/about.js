@@ -3,36 +3,33 @@ import Layout from '../components/layout'
 
 export default () => (
   <Layout>
-    <h2 className="content__header">Привет! Добро пожаловать на letconst!</h2>
+    <h2 className="content__header">Hi, friend! Welcome to letconst!</h2>
 
     <div className="content__section">
-      <h2 className="content__header">Что ты получишь от letconst?</h2>
+      <h2 className="content__header">W</h2>
       <p>
-        letconst позволит тебе стать успешным разработчиком который знает множество инструментов,
-        умеет ими пользоваться и своими знаниями поможет своей команде выйти из трудной ситуации в
-        любой ситуации.
-      </p>
-
-      <p>
-        letconst вдохновит и смотивирует тебя создавать с улыбкой на лице такие приложение
-        о которых ты даже не задумывался вчера
+        <span role="img" aria-label="sun">
+          ☀️
+        </span>
+        Everyday content!
+        <span role="img" aria-label="artist">
+          👨🏻‍🎨
+        </span>
+        Gain coding inspiration and become a superhero developer
+        who is able to offer the best solutions for the project
+        <span role="img" aria-label="superhero">🦸</span>
+        !
       </p>
     </div>
 
     <div className="content__section">
-      <h5 className="content__header">Несколько слов обо мне</h5>
+      <h5 className="content__header">About Me</h5>
 
       <p>
-        Меня зовут Андрей и помимо проведения времени за написаниями статей
-        для letconst я люблю заниматься музыкой, путешествовать, проводить время
-        с близкими мне людьми, постоянно пробовать что-то новое и много другого!
-        Ну точно как и ты!
-      </p>
-
-      <p>
-        Я обожаю разрабатывать приложения на основе идей которыми я вдохновляюсь
-        со всего окружающего, и не меньше я люблю делиться своим опытом с тобой и людьми
-        которые разделяют наши интересы!
+        My name is Andrii and I like playing music, traveling, talking to my frields,
+        sport and many other things!
+        Except all that I like sharing the knowledge I find useful.
+        Knowledge that lets you make your development process easier and more fun!
       </p>
     </div>
 
@@ -40,20 +37,26 @@ export default () => (
       <h5 className="content__header">С чего все началось?</h5>
 
       <p>
-        Я работаю веб-разработчиком уже 4 года и постоянно нахожусь в поисках информации
-        которая вдохновит на создание, выведет меня на следующий уровень и которой я
-        смогу поделиться с тобой, своими друзьями и коллегами.
+        I work as a developer for 4 years! During this time I’ve found it necessary
+        to find and research relevant information on the topic.
       </p>
-
       <p>
-        Так и было принятно решение создать letconst где я делаю веселые веб-поделки с
-        которыми ты можешь провести хорошо время и вдохновиться
+        It takes some time to find the information on
+        “how to make a development process better and easier”.
+      </p>
+      <p>
+        Letconst is a great place where I can share
+        all the research with my mates developers every day!
+      </p>
+      <p>
+        Letconst is a great place where I can share all the
+        research with my mates developers every day!
       </p>
     </div>
 
     <div className="content__section">
       <p>
-        Запрыгивай ко мне на борт, мой друг! Мы отправляемся!
+        Let’s get inspired and become superhero developers together!
       </p>
     </div>
   </Layout>

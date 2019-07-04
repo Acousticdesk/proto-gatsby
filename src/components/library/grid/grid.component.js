@@ -57,7 +57,7 @@ const LibraryGrid = () => {
                 .slice(0, 5)}
             </ul>
             <Link to={`/category/${category.slug}`}>
-              Больше историй с
+              More stories with
               {' '}
               {category.name}
             </Link>
