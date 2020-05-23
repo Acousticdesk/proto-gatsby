@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Layout from './layout'
-import { highlightCode } from './code/utils'
-import createHightlight from '../highlight'
+import { highlightCode } from '../services/codeSyntaxHighlight/index'
 
 createHightlight()
 
