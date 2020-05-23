@@ -45,43 +45,4 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
-
-  const categories = await graphql(`
-    {
-      allWordpressCategory {
-        edges {
-          node {
-            slug
-            name
-          }
-        }
-      }
-    }
-  `)
-
-  if (categories.errors) {
-    throw new Error(categories.errors)
-  }
-
-  const { allWordpressCategory } = categories.data
-
-  createPage({
-    path: '/categories',
-    component: require.resolve('./src/components/categories.js'),
-    context: {
-      categories: allWordpressCategory.edges,
-    },
-  })
-
-  allWordpressCategory.edges.forEach((c) => {
-    createPage({
-      path: `/category/${c.node.slug}`,
-      component: require.resolve('./src/components/category.js'),
-      context: {
-        name: c.node.name,
-        slug: c.node.slug,
-        posts: allWordpressPost.edges.filter(e => e.node.categories[0].slug === c.node.slug),
-      },
-    })
-  })
 }

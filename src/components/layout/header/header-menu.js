@@ -14,9 +14,6 @@ const HeaderMenu = () => (
     <Menu.Item className="header__menu-item">
       <Link to="/FAQ">FAQ</Link>
     </Menu.Item>
-    <Menu.Item className="header__menu-item">
-      <Link to="/categories">Instruments</Link>
-    </Menu.Item>
   </Menu>
 )
 

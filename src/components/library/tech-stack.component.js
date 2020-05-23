@@ -8,7 +8,7 @@ const TechStack = () => (
       <span role="img" aria-label="superhero">
         🦸
       </span>
-      Become a superhero developer making great stuff with this instruments!
+      Latest articles
     </h2>
     <LibraryGrid />
   </>
