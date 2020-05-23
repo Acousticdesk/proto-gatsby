@@ -5,38 +5,19 @@ export default () => (
   <Layout>
     <div className="content__section">
       <h2 className="content__header">Welcome to letconst!</h2>
-
-      <p>
-        <span role="img" aria-label="sun">
-          ☀️
-        </span>
-        Everyday content!
-        <span role="img" aria-label="artist">
-          👨🏻‍🎨
-        </span>
-        Gain coding inspiration and become a superhero developer
-        who is able to offer the best solutions for the product
-        <span role="img" aria-label="superhero">🦸</span>
-        !
-      </p>
-    </div>
-
-    <div className="content__section">
-      <h5 className="content__header">About Me</h5>
-
-      <p>
-        My name is Andrii and I like playing music, traveling, spending time with my friends,
-        sport and many other things!
-
-        I like discussing the problems I face as a web developer and find different approaches
-        of solving them!
-      </p>
     </div>
 
     <div className="content__section">
       <p>
-        Let’s get inspired and become superhero developers together!
+        Hi! My name is Andrii Kicha and I am a web developer from Ukraine.
+        I practice development for 5 years by now and have been working on various projects.
       </p>
+      <p>
+        letconst is my attempt to stay closer to Javascript community, to become a better writter,
+        to develop my own product and of course to gain new friends!
+      </p>
+      <p>I hope you are having a good time here! Cheers!</p>
+      <p>Andrii</p>
     </div>
   </Layout>
 )
