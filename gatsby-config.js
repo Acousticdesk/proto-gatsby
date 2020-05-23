@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        baseUrl: 'unsalvageable-hardc.000webhostapp.com',
+        baseUrl: 'letconstwp.000webhostapp.com',
         protocol: 'https',
         // is it hosted on wordpress.com, or self-hosted?
         hostingWPCOM: false,
@@ -20,8 +20,6 @@ module.exports = {
         useACF: false,
       },
     },
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-robots-txt',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
