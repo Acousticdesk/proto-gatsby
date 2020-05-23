@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Layout from '../components/layout'
+import Layout from '../components/layout/index'
 import TechStack from '../components/library/tech-stack.component'
 
 const IndexPage = () => (

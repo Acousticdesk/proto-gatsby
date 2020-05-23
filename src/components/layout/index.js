@@ -5,46 +5,15 @@ import 'antd/dist/antd.min.css'
 import {
   Layout, Menu, Dropdown, Icon,
 } from 'antd'
-import { Link } from 'gatsby'
 
-import { children as childrenDef } from '../prop-types-defs'
-import Logo from './layout/logo'
-import Meta from './meta'
-import twitter from './assets/twitter.svg'
-import facebook from './assets/facebook.svg'
-import telegram from './assets/telegram.svg'
-import './styles.css'
-
-const HeaderMenu = () => (
-  <Menu
-    theme="dark"
-    mode="horizontal"
-    className="header__menu"
-  >
-    <Menu.Item className="header__menu-item">
-      <Link to="/about">About</Link>
-    </Menu.Item>
-    <Menu.Item className="header__menu-item">
-      <Link to="/FAQ">FAQ</Link>
-    </Menu.Item>
-    <Menu.Item className="header__menu-item">
-      <Link to="/categories">Instruments</Link>
-    </Menu.Item>
-  </Menu>
-)
-
-const SocialIcon = ({ icon, title }) => (
-  <img
-    className="social-icon__img"
-    src={icon}
-    alt={`${title} icon`}
-  />
-)
-
-SocialIcon.propTypes = {
-  icon: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-}
+import { children as childrenDef } from '../../prop-types-defs'
+import Logo from './logo'
+import Meta from '../meta'
+import twitter from '../assets/twitter.svg'
+import facebook from '../assets/facebook.svg'
+import telegram from '../assets/telegram.svg'
+import { HeaderMenu, SocialIcon } from './header'
+import '../styles.css'
 
 const LinkBlank = ({ href, children }) => (
   <a

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-import Layout from './layout'
+import Layout from './layout/index'
 
 const Categories = ({ pageContext: { categories = [] } }) => (
   <Layout>
