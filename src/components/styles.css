@@ -156,3 +156,13 @@ ul {
 figcaption {
     text-align: center;
 }
+
+code {
+    padding: 2px;
+    background: #e0e0e0;
+}
+
+blockquote {
+    padding-left: 24px;
+    border-left: 4px solid #222;
+}
