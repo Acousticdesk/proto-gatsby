@@ -16,6 +16,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-eslint',
     'gatsby-plugin-root-import',
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-source-wordpress',
       options: {
