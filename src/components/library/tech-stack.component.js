@@ -5,8 +5,8 @@ import LibraryGrid from './grid/grid.component'
 const TechStack = () => (
   <>
     <h2>
-      <span role="img" aria-label="superhero">
-        🦸
+      <span role="img" aria-label="developer">
+        👨‍💻
       </span>
       Latest articles
     </h2>
