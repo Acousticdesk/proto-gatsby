@@ -53,8 +53,7 @@ const LibraryGrid = () => {
                       />
                     </Card>
                   </Link>
-                ))
-                .slice(0, 5)}
+                ))}
             </ul>
           </div>
         ))}
