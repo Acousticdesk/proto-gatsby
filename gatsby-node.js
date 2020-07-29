@@ -22,6 +22,7 @@ exports.createPages = async ({ graphql, actions }) => {
               slug
             }
             excerpt
+            wordpress_id
           }
         }
       }
@@ -34,7 +35,21 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { allWordpressPost } = result.data
 
-  allWordpressPost.edges.forEach((edge) => {
+  const createPostPages = allWordpressPost.edges.map(async (edge) => {
+    const { data: { allWordpressWpComments } } = await graphql(`
+      {
+        allWordpressWpComments(filter: {post: {eq: ${edge.node.wordpress_id}}}) {
+          edges {
+            node {
+              author_name,
+              content,
+              wordpress_id
+            }
+          }
+        }
+      }
+    `)
+
     createPage({
       path: `/${edge.node.categories[0].slug}/${edge.node.slug}`,
       component: require.resolve('./src/components/post.js'),
@@ -42,7 +57,10 @@ exports.createPages = async ({ graphql, actions }) => {
         title: edge.node.title,
         content: edge.node.content,
         excerpt: sanitizeHtml(edge.node.excerpt),
+        comments: allWordpressWpComments.edges,
       },
     })
   })
+
+  await Promise.all(createPostPages)
 }

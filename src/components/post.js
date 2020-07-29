@@ -5,7 +5,11 @@ import Helmet from 'react-helmet'
 import Layout from './layout/index'
 import { highlightCode } from '../services/codeSyntaxHighlight/index'
 
-const Post = ({ pageContext: { content, title, excerpt } }) => {
+const Post = ({
+  pageContext: {
+    content, title, excerpt, comments,
+  },
+}) => {
   useEffect(() => {
     highlightCode()
   }, [])
@@ -29,6 +33,17 @@ const Post = ({ pageContext: { content, title, excerpt } }) => {
       </Helmet>
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: content }} />
+      <h4>Comments:</h4>
+      {comments.map(
+        (
+          { node: { author_name: authorName, content: commentContent, wordpress_id: wordpressId } },
+        ) => (
+          <div key={wordpressId} className="Comment">
+            <h5>{authorName}</h5>
+            <div>{commentContent}</div>
+          </div>
+        ),
+      )}
     </Layout>
   )
 }
