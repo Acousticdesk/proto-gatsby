@@ -35,11 +35,11 @@ const LibraryGrid = () => {
         <ul className="library-grid__posts">
           {posts
             .map(post => (
-              <Link to={getPostPath('uncategorised', post.node)}>
-                <Card
-                  className="library-grid__card"
-                  key={post.node.id}
-                >
+              <Link
+                key={post.node.id}
+                to={getPostPath('uncategorised', post.node)}
+              >
+                <Card className="library-grid__card">
                   <Meta
                     avatar={
                       <Avatar src={getPostAvatar('uncategorised')} />

@@ -36,7 +36,11 @@ const Post = ({
       <h4>Comments:</h4>
       {comments.map(
         (
-          { node: { author_name: authorName, content: commentContent, wordpress_id: wordpressId } },
+          {
+            node: {
+              author_name: authorName, content: commentContent, wordpress_id: wordpressId,
+            } = {},
+          },
         ) => (
           <div key={wordpressId} className="Comment">
             <h5>{authorName}</h5>

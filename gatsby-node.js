@@ -43,7 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: require.resolve('./src/components/post.js'),
       context: {
         title: edge.node.title,
-        content: edge.node.content,
+        content: sanitizeHtml(edge.node.content, { allowedTags: sanitizeHtml.defaults.allowedTags.concat(['h1']) }),
         excerpt: sanitizeHtml(edge.node.excerpt),
         comments: edge.node.comments.nodes,
       },
