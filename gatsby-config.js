@@ -14,18 +14,15 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-eslint',
     'gatsby-plugin-root-import',
     'gatsby-plugin-sitemap',
     {
-      resolve: 'gatsby-source-wordpress',
+      resolve: 'gatsby-source-wordpress-experimental',
       options: {
-        baseUrl: 'letconstwp.000webhostapp.com',
-        protocol: 'https',
-        // is it hosted on wordpress.com, or self-hosted?
-        hostingWPCOM: false,
-        // does your site use the Advanced Custom Fields Plugin?
-        useACF: false,
+        url: 'https://letconstwp.000webhostapp.com/graphql',
       },
     },
   ],

@@ -12,17 +12,19 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     {
-      allWordpressPost {
+      allWpPost {
         edges {
           node {
             title
             content
             slug
-            categories {
-              slug
-            }
             excerpt
-            wordpress_id
+            comments {
+              nodes {
+                id
+                content
+              }
+            }
           }
         }
       }
@@ -33,34 +35,18 @@ exports.createPages = async ({ graphql, actions }) => {
     throw new Error(result.errors)
   }
 
-  const { allWordpressPost } = result.data
+  const { allWpPost } = result.data
 
-  const createPostPages = allWordpressPost.edges.map(async (edge) => {
-    const { data: { allWordpressWpComments } } = await graphql(`
-      {
-        allWordpressWpComments(filter: {post: {eq: ${edge.node.wordpress_id}}}) {
-          edges {
-            node {
-              author_name,
-              content,
-              wordpress_id
-            }
-          }
-        }
-      }
-    `)
-
+  allWpPost.edges.forEach((edge) => {
     createPage({
-      path: `/${edge.node.categories[0].slug}/${edge.node.slug}`,
+      path: `/uncategorised/${edge.node.slug}`,
       component: require.resolve('./src/components/post.js'),
       context: {
         title: edge.node.title,
         content: edge.node.content,
         excerpt: sanitizeHtml(edge.node.excerpt),
-        comments: allWordpressWpComments.edges,
+        comments: edge.node.comments.nodes,
       },
     })
   })
-
-  await Promise.all(createPostPages)
 }

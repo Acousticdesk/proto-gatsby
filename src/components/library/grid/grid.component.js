@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { Card, Avatar } from 'antd'
 
 import {
-  getEdgeCategory, usePosts, useCategories, getPostPath, getPostTitle,
+  usePosts, getPostPath, getPostTitle,
 } from '../../post/utils'
 
 import svelte from '../../assets/svelte.png'
@@ -22,41 +22,35 @@ const postIcons = {
 }
 
 const getPostAvatar = pipe(
-  category => path([category.slug], postIcons),
+  category => path([category], postIcons),
   defaultTo(improvement),
 )
 
 const LibraryGrid = () => {
-  const categories = useCategories()
   const posts = usePosts()
 
   return (
     <div className="library-grid">
-      {categories
-        .map(category => (
-          <div>
-            <h5 className="library-grid__heading">{category.name}</h5>
-            <ul className="library-grid__posts">
-              {posts
-                .filter(post => path(['slug'], getEdgeCategory(post)) === category.slug)
-                .map(post => (
-                  <Link to={getPostPath(getEdgeCategory(post), post.node)}>
-                    <Card
-                      className="library-grid__card"
-                      key={post.node.id}
-                    >
-                      <Meta
-                        avatar={
-                          <Avatar src={getPostAvatar(getEdgeCategory(post))} />
-                        }
-                        title={getPostTitle(post.node)}
-                      />
-                    </Card>
-                  </Link>
-                ))}
-            </ul>
-          </div>
-        ))}
+      <div>
+        <ul className="library-grid__posts">
+          {posts
+            .map(post => (
+              <Link to={getPostPath('uncategorised', post.node)}>
+                <Card
+                  className="library-grid__card"
+                  key={post.node.id}
+                >
+                  <Meta
+                    avatar={
+                      <Avatar src={getPostAvatar('uncategorised')} />
+                    }
+                    title={getPostTitle(post.node)}
+                  />
+                </Card>
+              </Link>
+            ))}
+        </ul>
+      </div>
     </div>
   )
 }
