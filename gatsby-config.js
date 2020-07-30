@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress-experimental',
       options: {
-        url: 'https://letconstwp.000webhostapp.com/graphql',
+        url: 'http://ygd.dnp.mybluehost.me/graphql',
       },
     },
   ],
