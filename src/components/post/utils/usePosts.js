@@ -8,6 +8,7 @@ const FETCH_POSTS_QUERY = graphql`query {
         content
         slug
         title
+        date
         categories {
           nodes {
             slug

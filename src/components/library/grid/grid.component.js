@@ -34,6 +34,7 @@ const LibraryGrid = () => {
       <div>
         <ul className="library-grid__posts">
           {posts
+            .sort((a, b) => Date.parse(path(['node', 'date'], b)) - Date.parse(path(['node', 'date'], a)))
             .map(post => (
               <Link
                 key={post.node.id}

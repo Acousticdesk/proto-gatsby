@@ -7,7 +7,7 @@ import { highlightCode } from '../services/codeSyntaxHighlight/index'
 
 const Post = ({
   pageContext: {
-    content, title, excerpt, comments,
+    content, title, excerpt,
   },
 }) => {
   useEffect(() => {
@@ -33,21 +33,6 @@ const Post = ({
       </Helmet>
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: content }} />
-      <h4>Comments:</h4>
-      {comments.map(
-        (
-          {
-            node: {
-              author_name: authorName, content: commentContent, wordpress_id: wordpressId,
-            } = {},
-          },
-        ) => (
-          <div key={wordpressId} className="Comment">
-            <h5>{authorName}</h5>
-            <div>{commentContent}</div>
-          </div>
-        ),
-      )}
     </Layout>
   )
 }
