@@ -14,7 +14,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-eslint',
     'gatsby-plugin-root-import',
     'gatsby-plugin-sitemap',
@@ -22,6 +21,9 @@ module.exports = {
       resolve: 'gatsby-source-wordpress-experimental',
       options: {
         url: 'http://ygd.dnp.mybluehost.me/graphql',
+        html: {
+          useGatsbyImage: false,
+        },
       },
     },
   ],
