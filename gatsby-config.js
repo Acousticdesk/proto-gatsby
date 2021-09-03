@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://letconst.com',
-    title: 'letconst - coding inspiration (react, svelte, css)',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
+    siteUrl: 'https://awaitasync.com',
+    title: 'awaitasync - read about your favorite developer tools',
+    description: 'Find out more about the favorite developer tools you use everyday!',
+    author: 'Andrii Kicha',
   },
   plugins: [
     {

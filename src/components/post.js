@@ -19,17 +19,17 @@ const Post = ({
         <title>
           {title}
           -
-          letconst
+          awaitasync
         </title>
         <meta name="description" content={excerpt} />
-        <link rel="canonical" href="https://letconst.com" />
+        <link rel="canonical" href="https://awaitasync.com" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={excerpt} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={excerpt} />
-        <meta name="twitter:site" content="@letconstportal" />
-        <meta name="twitter:creator" content="@letconstportal" />
+        {/* <meta name="twitter:site" content="@letconstportal" /> */}
+        {/* <meta name="twitter:creator" content="@letconstportal" /> */}
       </Helmet>
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: content }} />

@@ -7,10 +7,10 @@ export default () => (
       <h4 className="content__header">Q: I like the website. How can I help?</h4>
       <p>
         A: I would be very greatful if you could follow the link
-        and land a like to letconst&apos;s Facebook page
+        and land a like to awaitasync&apos;s Facebook page
         <span role="img" aria-label="red heart">❤️</span>
         {' '}
-        <a href="https://facebook.com/letconst">letconst on Facebook</a>
+        <a href="https://facebook.com/letconst">awaitasync on Facebook</a>
       </p>
     </div>
   </Layout>

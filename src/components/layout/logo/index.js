@@ -7,6 +7,6 @@ export default () => (
   <div
     className="logo"
   >
-    <Link to="/">letconst</Link>
+    <Link to="/">awaitasync</Link>
   </div>
 )
