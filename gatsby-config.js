@@ -18,7 +18,7 @@ module.exports = {
     'gatsby-plugin-root-import',
     'gatsby-plugin-sitemap',
     {
-      resolve: 'gatsby-source-wordpress-experimental',
+      resolve: 'gatsby-source-wordpress',
       options: {
         url: 'http://ygd.dnp.mybluehost.me/graphql',
         html: {
