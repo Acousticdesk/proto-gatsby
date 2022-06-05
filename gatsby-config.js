@@ -21,6 +21,12 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         url: 'http://ygd.dnp.mybluehost.me/graphql',
+        debug: {
+          preview: true,
+          graphql: {
+            showQueryOnError: true
+          }
+        },
         html: {
           useGatsbyImage: false,
         },
