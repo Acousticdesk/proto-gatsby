@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
+import { Container } from '@chakra-ui/react'
+import 'highlight.js/styles/github.css'
+import hljs from 'highlight.js'
 import Layout from './layout/index'
-import { highlightCode } from '../services/codeSyntaxHighlight/index'
 
 const Post = ({
   pageContext: {
@@ -11,7 +12,7 @@ const Post = ({
   },
 }) => {
   useEffect(() => {
-    highlightCode()
+    hljs.highlightAll()
   }, [])
   return (
     <Layout>
@@ -19,7 +20,7 @@ const Post = ({
         <title>
           {title}
           -
-          awaitasync
+          AwaitAsync
         </title>
         <meta name="description" content={excerpt} />
         <link rel="canonical" href="https://awaitasync.com" />
@@ -28,11 +29,11 @@ const Post = ({
         <meta property="og:description" content={excerpt} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={excerpt} />
-        {/* <meta name="twitter:site" content="@letconstportal" /> */}
-        {/* <meta name="twitter:creator" content="@letconstportal" /> */}
       </Helmet>
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+      <Container maxW={['container.sm', 'container.md']} className="post">
+        <h1>{title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: content }} />
+      </Container>
     </Layout>
   )
 }

@@ -1,20 +1,21 @@
+import { Link } from "gatsby"
 import React from 'react'
-import { Menu } from 'antd'
-import { Link } from 'gatsby'
+import { Flex, Box, Text } from "@chakra-ui/react";
 
 const HeaderMenu = () => (
-  <Menu
-    theme="dark"
-    mode="horizontal"
-    className="header__menu"
-  >
-    <Menu.Item className="header__menu-item">
-      <Link to="/about">About</Link>
-    </Menu.Item>
-    <Menu.Item className="header__menu-item">
-      <Link to="/FAQ">FAQ</Link>
-    </Menu.Item>
-  </Menu>
+  <Box display={['none', 'block']}>
+    <Flex>
+      {[{ to: '/about', text: 'About' }, { to: '/FAQ', text: 'FAQ' }].map(({ to, text }, index, links) => {
+        const mr = index === links.length - 1 ? 0 : 6;
+
+        return (
+          <Text key={to} mr={mr}>
+            <Link to={to}>{text}</Link>
+          </Text>
+        )
+      })}
+    </Flex>
+  </Box>
 )
 
 export default HeaderMenu
