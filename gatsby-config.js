@@ -37,5 +37,13 @@ module.exports = {
         isUsingColorMode: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          'material icons',
+        ],
+      }
+    }
   ],
 }

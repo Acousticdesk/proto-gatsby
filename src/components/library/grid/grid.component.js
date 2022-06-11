@@ -22,7 +22,7 @@ const LibraryGrid = () => {
               >
                 <LinkOverlay>
                     <Flex>
-                      <Icon as={Construction} mr={2} color="blue.300" />
+                      <Box as="span" className="material-icons" mr={2} color="blue.300">construction</Box>
                       <Box as="span">{getPostTitle(post.node)}</Box>
                     </Flex>
                 </LinkOverlay>
