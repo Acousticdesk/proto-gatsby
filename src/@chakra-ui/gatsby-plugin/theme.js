@@ -73,6 +73,11 @@ const theme = {
           code: {
             color: 'gray.700'
           }
+        },
+        '.material-icons': {
+          fontFamily: 'Material Icons',
+          fontSize: 'sm',
+          display: 'inline-block',
         }
       }
     }
