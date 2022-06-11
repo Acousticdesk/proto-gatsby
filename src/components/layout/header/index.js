@@ -1,7 +1,7 @@
 import HeaderMenu from './header-menu'
-import SocialIcon from './social-icon'
+import HeaderMenuMobile from './header-menu-mobile'
 
 export {
   HeaderMenu,
-  SocialIcon,
+  HeaderMenuMobile,
 }

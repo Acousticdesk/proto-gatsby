@@ -1,17 +1,16 @@
 import React from 'react'
 import Layout from '../components/layout/index'
+import { Heading, Text } from '@chakra-ui/react'
 
 export default () => (
   <Layout>
-    <div className="content__section">
-      <h4 className="content__header">Q: I like the website. How can I help?</h4>
-      <p>
-        A: I would be very greatful if you could follow the link
-        and land a like to awaitasync&apos;s Facebook page
-        <span role="img" aria-label="red heart">❤️</span>
-        {' '}
-        <a href="https://facebook.com/letconst">awaitasync on Facebook</a>
-      </p>
-    </div>
+    <Heading mb={5}>FAQ</Heading>
+    <Heading size="sm">Q: I like your blog. How can I help?</Heading>
+    <Text mt={2}>
+      A: Please, contact me on Twitter or Facebook and share your feedback about AwaitAsync with me.
+    </Text>
+    <Text mt={2}>
+      I would also appreciate if you would recommend me topics for my next articles. Thanks!
+    </Text>
   </Layout>
 )

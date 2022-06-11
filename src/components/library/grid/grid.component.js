@@ -1,58 +1,36 @@
 import React from 'react'
-import { path, defaultTo, pipe } from 'ramda'
 import { Link } from 'gatsby'
-import { Card, Avatar } from 'antd'
+import { SimpleGrid, LinkBox, Heading, LinkOverlay, Box, Flex, Icon } from '@chakra-ui/react';
+import { Construction } from "@mui/icons-material"
 
 import {
   usePosts, getPostPath, getPostTitle,
 } from '../../post/utils'
 
-import svelte from '../../assets/svelte.png'
-import react from '../../assets/react.png'
-import improvement from '../../assets/improvement.png'
-
-import './styles.css'
-
-const { Meta } = Card
-
-const postIcons = {
-  svelte,
-  improvement,
-  react,
-}
-
-const getPostAvatar = pipe(
-  category => path([category], postIcons),
-  defaultTo(improvement),
-)
-
 const LibraryGrid = () => {
   const posts = usePosts()
 
   return (
-    <div className="library-grid">
-      <div>
-        <ul className="library-grid__posts">
-          {posts
-            .sort((a, b) => Date.parse(path(['node', 'date'], b)) - Date.parse(path(['node', 'date'], a)))
-            .map(post => (
+    <SimpleGrid columns={[1, 3]} spacing={4}>
+      {posts
+        .sort((a, b) => Date.parse(b.node.date) - Date.parse(a.node.date))
+        .map(post => (
+          <LinkBox key={post.node.id} as='article' p='5' borderWidth='1px' rounded='md'>
+            <Heading size='sm' my='2'>
               <Link
-                key={post.node.id}
                 to={getPostPath('uncategorised', post.node)}
               >
-                <Card className="library-grid__card">
-                  <Meta
-                    avatar={
-                      <Avatar src={getPostAvatar('uncategorised')} />
-                    }
-                    title={getPostTitle(post.node)}
-                  />
-                </Card>
+                <LinkOverlay>
+                    <Flex>
+                      <Icon as={Construction} mr={2} color="blue.300" />
+                      <Box as="span">{getPostTitle(post.node)}</Box>
+                    </Flex>
+                </LinkOverlay>
               </Link>
-            ))}
-        </ul>
-      </div>
-    </div>
+            </Heading>
+          </LinkBox>
+        ))}
+    </SimpleGrid>
   )
 }
 

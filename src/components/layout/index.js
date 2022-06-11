@@ -1,86 +1,45 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import 'antd/dist/antd.min.css'
-
-import {
-  Layout, Menu, Dropdown, Icon,
-} from 'antd'
+import { Flex, Spacer, Container, Box } from '@chakra-ui/react'
+import SocialMenu from '../social-menu/social-menu.component';
 
 import { children as childrenDef } from '../../prop-types-defs'
 import Logo from './logo'
 import Meta from '../meta'
-import twitter from '../assets/twitter.svg'
-import facebook from '../assets/facebook.svg'
-import telegram from '../assets/telegram.svg'
-import { HeaderMenu, SocialIcon } from './header'
-import '../styles.css'
-
-const LinkBlank = ({ href, children }) => (
-  <a
-    target="_blank"
-    rel="noopener noreferrer"
-    href={href}
-  >
-    {children}
-  </a>
-)
-
-LinkBlank.propTypes = {
-  href: PropTypes.string.isRequired,
-  children: PropTypes.arrayOf(PropTypes.node).isRequired,
-}
-
-const SocialMenu = () => (
-  <Menu
-    theme="dark"
-    mode="horizontal"
-    className="header__social-menu"
-  >
-    <Menu.Item>
-      <LinkBlank href="https://facebook.com/letconst">
-        <SocialIcon icon={facebook} title="facebook" />
-      </LinkBlank>
-    </Menu.Item>
-    <Menu.Item>
-      <LinkBlank href="https://twitter.com/letconstportal">
-        <SocialIcon icon={twitter} title="twitter" />
-      </LinkBlank>
-    </Menu.Item>
-    <Menu.Item>
-      <LinkBlank href="https://t.me/letconst">
-        <SocialIcon icon={telegram} title="telegram" />
-      </LinkBlank>
-    </Menu.Item>
-  </Menu>
-)
+import { HeaderMenu, HeaderMenuMobile } from './header'
 
 const GatsbyLayout = ({ children }) => (
-  <>
+  <Flex flexDirection="column" h="100vh">
     <Meta />
-    <Layout.Header className="header">
-      <Logo />
-      <div className="header__menu-container">
-        <HeaderMenu />
-      </div>
-      <SocialMenu />
-      <Dropdown
-        trigger="click"
-        overlay={HeaderMenu}
-        className="header__mobile-menu"
-      >
-        <button type="button" className="header__menu-button">
-          <Icon
-            type="menu"
-            className="header__menu-icon"
-          />
-        </button>
-      </Dropdown>
-    </Layout.Header>
-    <div className="app">
-      {children}
-    </div>
-    <footer />
-  </>
+    <Box boxShadow="md">
+      <Container>
+        <Box py="4">
+          <Flex bg="white">
+            <Logo />
+            <Spacer />
+            <HeaderMenu />
+            <HeaderMenuMobile />
+            <Spacer display={['none', 'block']} />
+            <Box display={['none', 'block']}>
+              <SocialMenu />
+            </Box>
+          </Flex>
+        </Box>
+      </Container>
+    </Box>
+    <Flex flexDirection="column" flexGrow={1} flexShrink={1} overflow="auto">
+      <Container flexGrow={1} py={[0, 10]}>
+        {children}
+      </Container>
+      <Box bg="gray.900" py={2}>
+        <Container>
+          <Flex>
+            <Spacer />
+            <SocialMenu iconColor="white" />
+          </Flex>
+        </Container>
+      </Box>
+    </Flex>
+  </Flex>
 )
 
 GatsbyLayout.propTypes = {

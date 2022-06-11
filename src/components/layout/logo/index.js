@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Text } from '@chakra-ui/react';
 
-import './styles.css'
-
-export default () => (
-  <div
-    className="logo"
-  >
-    <Link to="/">awaitasync</Link>
-  </div>
-)
+export default function Logo() {
+  return (
+    <Link to="/">
+      <Text fontSize="xl" fontWeight="medium">AwaitAsync</Text>
+    </Link>
+  )
+}
