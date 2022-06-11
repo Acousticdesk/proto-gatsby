@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { SimpleGrid, LinkBox, Heading, LinkOverlay, Box, Flex, Icon } from '@chakra-ui/react';
-import { Construction } from "@mui/icons-material"
 
 import {
   usePosts, getPostPath, getPostTitle,
