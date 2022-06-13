@@ -37,7 +37,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { allWpPost } = result.data
 
-  allWpPost.edges.forEach((edge) => {
+  allWpPost.edges.forEach((edge, index, allEdges) => {
+    const previousPost = allEdges[index - 1]?.node;
+    const nextPost = allEdges[index + 1]?.node;
+
     createPage({
       path: `/uncategorised/${edge.node.slug}`,
       component: require.resolve('./src/components/post.js'),
@@ -46,6 +49,10 @@ exports.createPages = async ({ graphql, actions }) => {
         content: edge.node.content,
         excerpt: sanitizeHtml(edge.node.excerpt),
         comments: edge.node.comments.nodes,
+        previousPost: previousPost ? `/uncategorised/${previousPost.slug}` : null,
+        previousPostTitle: previousPost?.title,
+        nextPost: nextPost ? `/uncategorised/${nextPost.slug}` : null,
+        nextPostTitle: nextPost?.title
       },
     })
   })
