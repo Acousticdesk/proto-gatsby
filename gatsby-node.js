@@ -37,7 +37,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { allWpPost } = result.data
 
-  allWpPost.edges.forEach((edge, index, allEdges) => {
+  allWpPost.edges.sort((a, b) => Date.parse(b.node.date) - Date.parse(a.node.date)).forEach((edge, index, allEdges) => {
     const previousPost = allEdges[index - 1]?.node;
     const nextPost = allEdges[index + 1]?.node;
 
